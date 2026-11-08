@@ -2,7 +2,7 @@
 
 Site pessoal desenvolvido para o Trabalho Individual A2 (HTML, CSS, JavaScript, Git).
 
-- **Autor:** [SEU NOME] — [SUA TURMA]
+- **Autor:** Robert Santos Pereira — 012A
 - **Site publicado:** https://[SEU-USUARIO].github.io/meu-portfolio/
 - **Páginas:** index, currículo, contato (formulário), multimídia, gráficos
 - **Recursos:** HTML semântico, CSS responsivo (Flexbox, Grid, media queries, clamp), tema claro/escuro e mensagens salvas com localStorage, canvas e SVG
