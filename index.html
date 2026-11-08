@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de [SEU NOME], estudante de Tecnologia da Informação.">
+  <title>Início | [SEU NOME]</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">[SEU NOME]</a>
+      <div class="botoes">
+        <button id="btn-tema" type="button" aria-pressed="false">Tema escuro</button>
+        <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+          <li><a href="multimidia.html">Multimídia</a></li>
+          <li><a href="graficos.html">Gráficos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="destaque" aria-labelledby="titulo">
+      <div>
+        <h1 id="titulo">Olá, eu sou ROBERT SANTOS PEREIRA</h1>
+        <p class="lead">Estudante de Análise e Desenvolvimento de Sistema na Braz Cubas, aprendendo a construir produtos para a web.</p>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Braz Cubas e tenho muito interesse em tecnologia, principalmente na área de programação e desenvolvimento de software. Estou sempre buscando aprender coisas novas e aprofundar meus conhecimentos em HTML, C/C++ e outras linguagens. Meu objetivo é transformar esse aprendizado em experiência prática, desenvolver minhas habilidades e conquistar meu espaço no mercado de tecnologia, contribuindo com dedicação, criatividade e vontade de evoluir.</p>
+        <div class="linha">
+          <a class="btn btn-cheio" href="curriculo.html">Ver currículo</a>
+          <a class="btn" href="formulario.html">Entrar em contato</a>
+        </div>
+      </div>
+      <img src="img/perfil.svg" alt="Ilustração de perfil com as iniciais do autor" width="256" height="256">
+    </section>
+
+    <section aria-labelledby="explorar">
+      <h2 id="explorar">Explore o site</h2>
+      <div class="cartoes">
+        <article class="cartao"><h3>Currículo</h3><p>Formação, habilidades e projetos.</p><a href="curriculo.html">Abrir currículo</a></article>
+        <article class="cartao"><h3>Multimídia</h3><p>Vídeo, áudio e conteúdo incorporado.</p><a href="multimidia.html">Abrir multimídia</a></article>
+        <article class="cartao"><h3>Gráficos</h3><p>Desenhos com Canvas e SVG.</p><a href="graficos.html">Abrir gráficos</a></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 [SEU NOME] · Trabalho individual A2 · <a href="https://github.com/[SEU-USUARIO]/meu-portfolio">Repositório no GitHub</a></p>
+  </footer>
+</body>
+</html>

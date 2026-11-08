@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de [SEU NOME], estudante de Tecnologia da Informação.">
+  <title>Multimídia | [SEU NOME]</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">[SEU NOME]</a>
+      <div class="botoes">
+        <button id="btn-tema" type="button" aria-pressed="false">Tema escuro</button>
+        <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+          <li><a href="multimidia.html" aria-current="page">Multimídia</a></li>
+          <li><a href="graficos.html">Gráficos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <h1>Multimídia</h1>
+    <div class="midia">
+      <section aria-labelledby="v">
+        <h2 id="v">Vídeo</h2>
+        <video id="video" controls preload="metadata" src="midia/video.mp4">
+          <track kind="captions" srclang="pt" label="Português" src="midia/legenda.vtt" default>
+          Seu navegador não suporta vídeo.
+        </video>
+        <p>Substitua por um vídeo seu em <code>midia/video.mp4</code>.</p>
+      </section>
+      <section aria-labelledby="a">
+        <h2 id="a">Áudio</h2>
+        <audio controls src="midia/tom.wav">Seu navegador não suporta áudio.</audio>
+        <p>Tom gerado de exemplo. Troque por um áudio seu.</p>
+      </section>
+      <section aria-labelledby="i">
+        <h2 id="i">Conteúdo incorporado (iframe)</h2>
+        <iframe title="Mapa de São Paulo no OpenStreetMap" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.75%2C-23.70%2C-46.50%2C-23.45&amp;layer=mapnik"></iframe>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 [SEU NOME] · Trabalho individual A2 · <a href="https://github.com/[SEU-USUARIO]/meu-portfolio">Repositório no GitHub</a></p>
+  </footer>
+</body>
+</html>

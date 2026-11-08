@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de [SEU NOME], estudante de Tecnologia da Informação.">
+  <title>Currículo | [SEU NOME]</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">[SEU NOME]</a>
+      <div class="botoes">
+        <button id="btn-tema" type="button" aria-pressed="false">Tema escuro</button>
+        <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curriculo.html" aria-current="page">Currículo</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+          <li><a href="multimidia.html">Multimídia</a></li>
+          <li><a href="graficos.html">Gráficos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <h1>Currículo</h1>
+    <p class="nota"><strong>Preencha com dados reais:</strong> o trabalho exige conteúdo verdadeiro sobre você. Apague esta nota antes de entregar.</p>
+
+    <section aria-labelledby="sobre">
+      <h2 id="sobre">Sobre mim</h2>
+      <p>[Um parágrafo seu: quem você é, de onde vem, o que te motivou a escolher TI.]</p>
+    </section>
+
+    <section aria-labelledby="formacao">
+      <h2 id="formacao">Formação</h2>
+      <article class="cartao">
+        <h3>[SEU CURSO]</h3>
+        <p>[SUA UNIVERSIDADE] · [ANO DE INÍCIO] até [PREVISÃO DE CONCLUSÃO]</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="habilidades">
+      <h2 id="habilidades">Habilidades</h2>
+      <ul>
+        <li>HTML5 e CSS3 (em aprendizado nesta disciplina)</li>
+        <li>JavaScript básico</li>
+        <li>Git e GitHub</li>
+        <li>[ADICIONE AS SUAS, SOMENTE O QUE VOCÊ REALMENTE SABE]</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projetos">
+      <h2 id="projetos">Projetos</h2>
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Este portfólio</h3>
+          <p>Site pessoal construído em HTML, CSS e JavaScript, versionado no GitHub e publicado com HTTPS.</p>
+          <span class="etiqueta">HTML</span><span class="etiqueta">CSS</span><span class="etiqueta">JS</span>
+        </article>
+        <article class="cartao">
+          <h3>[OUTRO PROJETO SEU]</h3>
+          <p>[Descreva o que fez e o que aprendeu.]</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="interesses">
+      <h2 id="interesses">Interesses</h2>
+      <p>[Seus interesses reais dentro e fora de TI.]</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 [SEU NOME] · Trabalho individual A2 · <a href="https://github.com/[SEU-USUARIO]/meu-portfolio">Repositório no GitHub</a></p>
+  </footer>
+</body>
+</html>
