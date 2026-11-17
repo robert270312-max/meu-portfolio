@@ -3,10 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfólio pessoal de Robert Santos Pereira, estudante de Tecnologia da Informação.">
+  <meta name="description" content="Currículo de Robert Santos Pereira, estudante de Análise e Desenvolvimento de Sistemas, com projetos em desenvolvimento web e banco de dados.">
   <title>Currículo | Robert Santos Pereira</title>
   <link rel="stylesheet" href="css/estilos.css">
   <script src="js/scripts.js" defer></script>
+  <style>
+    /* Complementos exclusivos desta página: utilizam as cores do CSS original. */
+    .cv-intro { background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:.65rem; padding:clamp(1.2rem,3vw,2rem); margin-bottom:1.6rem; }
+    .cv-intro h1 { margin:.2rem 0 .65rem; }
+    .cv-kicker { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:.09em; font-size:.8rem; margin:0; }
+    .cv-intro .lead { max-width:68ch; margin:.5rem 0 1.2rem; }
+    .cv-links { display:flex; flex-wrap:wrap; gap:.65rem; }
+    .cv-section { margin-top:2rem; }
+    .cv-section h2 { margin-bottom:.8rem; }
+    .cv-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr)); gap:1rem; }
+    .cv-card { background:var(--surface); border:1px solid var(--line); border-radius:.6rem; padding:1.2rem 1.3rem; min-width:0; }
+    .cv-card h3 { font-size:1.15rem; margin:0 0 .45rem; }
+    .cv-card p { margin:.4rem 0; }
+    .cv-meta { color:var(--muted); font-size:.92rem; }
+    .cv-list { margin:.6rem 0 0; padding-left:1.25rem; }
+    .cv-list li { margin:.35rem 0; }
+    .cv-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.9rem; }
+    .cv-tag { display:inline-block; border:1px solid var(--line); background:var(--bg); color:var(--ink); border-radius:999px; padding:.18rem .65rem; font-size:.85rem; }
+    .cv-card a { overflow-wrap:anywhere; }
+    .cv-note { color:var(--muted); font-size:.9rem; }
+    @media (prefers-reduced-motion:no-preference) { .cv-card { transition:transform .2s,border-color .2s; } .cv-card:hover { transform:translateY(-2px); border-color:var(--accent); } }
+  </style>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -29,56 +51,93 @@
     </div>
   </header>
   <main id="conteudo">
-    <h1>Currículo</h1>
-    <p class="nota"><strong></strong> </p>
-
-    <section aria-labelledby="sobre">
-      <h2 id="sobre">Sobre mim</h2>
-      <p>Me chamo Robert, sou da zona leste de SP e escolhi ADS, por gostar de computadores e desejo atuar na área.</p>
+    <section class="cv-intro" aria-labelledby="cv-titulo">
+      <p class="cv-kicker">Currículo e portfólio</p>
+      <h1 id="cv-titulo">Robert Santos Pereira</h1>
+      <p class="lead">Estudante de Análise e Desenvolvimento de Sistemas, com interesse em desenvolvimento de software, programação e banco de dados.</p>
+      <div class="cv-links">
+        <a class="btn btn-cheio" href="#projetos">Conhecer projetos</a>
+        <a class="btn" href="formulario.html">Entrar em contato</a>
+        <a class="btn" href="https://github.com/robert270312-max/curriculo_front" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+      </div>
     </section>
 
-    <section aria-labelledby="formacao">
-      <h2 id="formacao">Formação</h2>
-      <article class="cartao">
-        <h3>Análise e Desenvolvimento de Sistemas</h3>
-        <p>Braz Cubas · 2026 até 2027</p>
-      </article>
+    <section class="cv-section" aria-labelledby="sobre">
+      <h2 id="sobre">Perfil profissional</h2>
+      <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Braz Cubas. Estou construindo minha base em desenvolvimento web, lógica de programação e bancos de dados por meio das atividades da graduação e de projetos práticos. Busco oportunidades para aprender com profissionais da área, contribuir em equipe e evoluir como desenvolvedor.</p>
     </section>
 
-    <section aria-labelledby="habilidades">
-      <h2 id="habilidades">Habilidades</h2>
-      <ul>
-        <li>HTML5 e CSS3 (em aprendizado)</li>
-        <li>JavaScript básico</li>
-        <li>Git e GitHub</li>
-        <li>Phyton (em aprendizado)</li>
-        <li>SQL (em aprendizado)</li>
-        <li>C/C++ (em aprendizado)</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="projetos">
-      <h2 id="projetos">Projetos</h2>
-      <div class="cartoes">
-        <article class="cartao">
-          <h3>Este portfólio</h3>
-          <p>Site pessoal construído em HTML, CSS e JavaScript, versionado no GitHub e publicado com HTTPS.</p>
-          <span class="etiqueta">HTML</span><span class="etiqueta">CSS</span><span class="etiqueta">JS</span>
+    <section class="cv-section" aria-labelledby="formacao">
+      <h2 id="formacao">Formação acadêmica</h2>
+      <div class="cv-grid">
+        <article class="cv-card">
+          <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+          <p>Universidade Braz Cubas</p>
+          <p class="cv-meta">Em andamento · Previsão de conclusão: dezembro de 2027</p>
         </article>
-        <article class="cartao">
-          <h3>MEU PROJETO</h3>
-          <p></p>
+        <article class="cv-card">
+          <h3>Cursos complementares</h3>
+          <p class="cv-meta">SENAI</p>
+          <ul class="cv-list">
+            <li>Excel Básico</li>
+            <li>Auxiliar Administrativo</li>
+            <li>Eletricista Instalador</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="interesses">
-      <h2 id="interesses">Interesses</h2>
-      <p></p>
+    <section class="cv-section" aria-labelledby="habilidades">
+      <h2 id="habilidades">Conhecimentos e habilidades</h2>
+      <div class="cv-grid">
+        <article class="cv-card">
+          <h3>Tecnologias em estudo</h3>
+          <p class="cv-note">Conhecimentos em desenvolvimento, sem indicação de nível avançado.</p>
+          <div class="cv-tags">
+            <span class="cv-tag">HTML5</span><span class="cv-tag">CSS3</span><span class="cv-tag">JavaScript básico</span><span class="cv-tag">Python</span><span class="cv-tag">SQL / MySQL</span><span class="cv-tag">C/C++</span><span class="cv-tag">Git e GitHub</span>
+          </div>
+        </article>
+        <article class="cv-card">
+          <h3>Competências profissionais</h3>
+          <ul class="cv-list">
+            <li>Comunicação e trabalho em equipe</li>
+            <li>Organização e responsabilidade</li>
+            <li>Resolução de problemas</li>
+            <li>Adaptabilidade e disposição para aprender</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section" aria-labelledby="projetos">
+      <h2 id="projetos">Projetos acadêmicos e pessoais</h2>
+      <div class="cv-grid">
+        <article class="cv-card">
+          <h3>Portfólio pessoal responsivo</h3>
+          <p>Desenvolvimento de um site com páginas de apresentação, currículo, contato, multimídia e gráficos. Aplicação de HTML semântico, CSS responsivo, JavaScript, Canvas e SVG.</p>
+          <div class="cv-tags"><span class="cv-tag">HTML</span><span class="cv-tag">CSS</span><span class="cv-tag">JavaScript</span></div>
+          <p><a href="https://github.com/robert270312-max/curriculo_front" target="_blank" rel="noopener noreferrer">Ver repositório do portfólio</a></p>
+        </article>
+        <article class="cv-card">
+          <h3>Banco de dados para e-commerce</h3>
+          <p>Projeto acadêmico de modelagem e implementação de banco de dados relacional para uma loja virtual, com criação de tabelas, relacionamentos e consultas SQL no MySQL.</p>
+          <div class="cv-tags"><span class="cv-tag">SQL</span><span class="cv-tag">MySQL</span><span class="cv-tag">Modelagem de dados</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section" aria-labelledby="experiencia">
+      <h2 id="experiencia">Experiência profissional</h2>
+      <p class="cv-note">Experiências anteriores em atendimento, operações e eventos, com competências transferíveis para a área de tecnologia.</p>
+      <div class="cv-grid">
+        <article class="cv-card"><h3>Produção de eventos</h3><p class="cv-meta">Amista Tecnologia · Maio/2024 – Junho/2025</p><p>Atuação na produção de eventos, com foco em painéis de LED e apoio à execução das atividades.</p></article>
+        <article class="cv-card"><h3>Consultor de negócios</h3><p class="cv-meta">TMKT · Junho/2023 – Maio/2024</p><p>Atendimento e oferta de produtos bancários por telefone, desenvolvendo comunicação e relacionamento com clientes.</p></article>
+        <article class="cv-card"><h3>Operador de loja</h3><p class="cv-meta">Dia Brasil · Agosto/2022 – Junho/2023</p><p>Atendimento no caixa, reposição de mercadorias e organização de estoque.</p></article>
+      </div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2026 Robert Santos Pereira · Trabalho individual A2 · <a href="https://github.com/[SEU-USUARIO]/meu-portfolio">Repositório no GitHub</a></p>
+    <p>&copy; 2026 Robert Santos Pereira · Trabalho individual A2 · <a href="https://github.com/robert270312-max/curriculo_front">Repositório no GitHub</a></p>
   </footer>
 </body>
 </html>
